@@ -1,0 +1,12 @@
+<!doctype html>
+<html lang="ko">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>이력 메모</title><link rel="stylesheet" href="memo.css"></head>
+<body>
+<header><div class="brand">MY CAREER NOTES</div><div class="heading"><h1>이력 메모<span>✦</span></h1><button id="compact" aria-expanded="true" title="메모 내용 접기">접기</button></div><p>기억 대신 기록, 지원서 옆에 꺼내 두세요.</p></header>
+<div id="contents">
+<nav aria-label="메모 분류" id="categories"></nav>
+<main><div class="section-head"><h2 id="section-title"></h2><button id="add-entry">+ 기록 추가</button></div><div id="entries"></div></main>
+<footer><div class="status-row"><span id="status" role="status" aria-live="polite">불러오는 중…</span><span>이 브라우저에 저장</span></div><div class="tools"><button id="export">백업 내보내기</button><button id="import">백업 가져오기</button><input id="file" type="file" accept="application/json,.json" hidden></div><p>패널 상단의 × 버튼으로 닫을 수 있습니다.</p></footer>
+</div>
+<script type="module" src="memo.js"></script>
+</body></html>

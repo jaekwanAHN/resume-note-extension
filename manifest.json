@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "이력 메모",
+  "description": "지원서를 작성하며 꺼내 보는 나의 개인정보, 학력, 군 복무, 경력 메모",
+  "version": "0.2.0",
+  "minimum_chrome_version": "116",
+  "permissions": [
+    "storage",
+    "sidePanel",
+    "clipboardWrite"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "이력 메모 사이드 패널 열기"
+  },
+  "options_page": "memo.html",
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'none'; connect-src 'none'"
+  },
+  "side_panel": {
+    "default_path": "memo.html"
+  }
+}
